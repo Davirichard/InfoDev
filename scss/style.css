@@ -380,6 +380,12 @@ nav .nav-list li a {
     flex-wrap: wrap;
     flex-direction: column;
   }
+  .flex-process2 .right-process2 h4 {
+    text-align: center;
+  }
+  .flex-process .right-process h4 {
+    text-align: center;
+  }
   .box-process .flex-process .left-process {
     width: 100%;
   }
