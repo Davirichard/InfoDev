@@ -1,32 +1,61 @@
+//Squada One
 @import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+//Roboto Condensed
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;0,700;1,400;1,700&family=Squada+One&display=swap');
+//Roboto
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap');
 
 :root{
     --Title: font-family: 'Squada One', cursive;;
     --Parag: font-family: 'Roboto', sans-serif;;
+    --secundary-font: font-family: 'Roboto', sans-serif;;
+    --color-base: #00a0d5;
+    --color-base-secundary: #008ebd;
 }
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: var(--Parag);
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top:6rem;
+  scroll-behavior: smooth;
 }
 
 body{
-  background: rgb(21, 21, 21);
+  background: black;
 }
+
+/* ============ RESET SCROLLBAR ==============-- */
+
+body::-webkit-scrollbar {
+  width: 8px;    
+  display: none;     
+}
+
+
+
+body::-webkit-scrollbar-thumb {
+  background-color:#00a0d5 ;  
+  border-radius: 20px;    
+}
+
 
 a{
     text-decoration: none;
     color: #fff;
     text-decoration: none;
-    transition: 0.3s
+    transition: 0.3s;
+    font-family: 'Roboto', sans-serif;
 }
 
   
 a:hover {
-    color: rgb(152, 109, 255);
+    color: var(--color-base);
 }
   
   .logo {
@@ -47,12 +76,7 @@ a:hover {
     z-index: 999;
   }
   
-  main {
-    background: url("bg.jpg") no-repeat center center;
-    background-size: cover;
-    height: 92vh;
-  }
-  
+
   .nav-list {
     list-style: none;
     display: flex;
@@ -143,10 +167,11 @@ a:hover {
 
 .main {
     width: 100%;
-    height:800px;
+    height:auto;
+    display: block;
 }
 
-.main .container{
+.main .section-home{
     position: relative;
     top: 80px;
 }
@@ -157,21 +182,180 @@ a:hover {
     align-items: center;
 }
 
-.main .background-img{
+.main .background{
     width: 100%;
-    height: 600px;
+    height: auto;
     background-image: url(../images/homegif.gif);
-    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background-position: center;
 }
 
-.main .background-img h1{
+.main .background .opacity{
+  width: 100%;
+  height: 600px;
+  background-color: rgba(0, 0, 0, 0.854);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.main .background .opacity h1{
   color: white;
   background-color: none;
   text-transform: uppercase;
-  font-size: 30px;
+  font-size: 40px;
+  font-family:'Squada One', cursive;
+}
+
+.section1{
+  width: 100%;
+  height: auto;
+  position: relative;
+  top: 100px;
+}
+
+.section1 .container{
+  max-width: 900px;
+  height: auto;
+  margin: 0 auto;
+  padding: 20px 10px;
+}
+
+.section1 .container .box-img{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.section1 .container .box-img .img{
+  width: 100%;
+  height: 400px;
+  background-image: url(../images/olivier-collet-JMwCe3w7qKk-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  margin: 0 20px;
+}
+
+.section1 .container .line{
+  width: 100%;
+  height: 2px;
+  background-color: grey;
+  margin: 40px 0 40px 0;
+}
+.section1 h2{
+  color: var(--color-base);
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-family:'Squada One', cursive;
+  font-size: 26px;
+}
+
+.box-process {
+  width: 100%;
+  height: auto;
+  margin: 40px 0;
+}
+
+.box-process .title-process{
+  width: 100%;
+  text-align: left;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box-process .title-process h3{
+  width: 50%;
+  padding: 30px;
+  border: .8px solid gray;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.box-process .flex-process{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-process .left-process{
+  padding: 20px;
+}
+
+.flex-process .left-process h4{
+  color: #00a0d5;
+  font-family:'Squada One', cursive;
+  font-size: 18px;
+}
+
+.flex-process .left-process p{
+  color: white;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 20px;
+  line-height: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.box-process2{
+  width: 100%;
+  height: auto;
+  margin: 40px 0;
+}
+
+.box-process2 .title-process2{
+  width: 100%;
+  text-align: left;
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+.box-process2 .title-process2 h3{
+  width: 50%;
+  padding: 30px;
+  border: .8px solid gray;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 400;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+}
+
+.box-process2 .flex-process2{
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-process2 .right-process2{
+  padding: 20px;
+}
+
+.flex-process2 .right-process2 h4{
+  color: #00a0d5;
+  font-family:'Squada One', cursive;
+  font-size: 18px;
+}
+
+.flex-process2 .right-process2 p{
+  color: white;
+  font-size: 11px;
+  font-weight: 500;
+  margin-top: 20px;
+  line-height: 20px;
+  font-family: 'Roboto', sans-serif;
 }
