@@ -209,6 +209,7 @@ a:hover {
   background-position: center;
   background-size: cover;
   margin: 0 20px;
+  filter: brightness(70%);
 }
 
 .section1 .container .line{
@@ -267,15 +268,15 @@ a:hover {
 .flex-process .left-process h4{
   color: #00a0d5;
   font-family:'Squada One', cursive;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .flex-process .left-process p{
   color: white;
-  font-size: 11px;
+  font-size: 11.5px;
   font-weight: 500;
   margin-top: 20px;
-  line-height: 20px;
+  line-height: 25px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -320,15 +321,15 @@ a:hover {
 .flex-process2 .right-process2 h4{
   color: #00a0d5;
   font-family:'Squada One', cursive;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 .flex-process2 .right-process2 p{
   color: white;
-  font-size: 11px;
+  font-size: 11.5px;
   font-weight: 500;
   margin-top: 20px;
-  line-height: 20px;
+  line-height: 25px;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -367,9 +368,14 @@ a:hover {
 }
 
 @media screen and (max-width:850px){
+  
+  .section1 .container .box-img .img{
+    width: 90%;
+    height: 300px;
+  }
 
   .flex-process .left-process p{
-    font-size: 10px;
+    font-size: 11px;
   }
 
   
@@ -401,7 +407,7 @@ a:hover {
   }
 
   .flex-process2 .right-process2 p{
-    font-size: 10px;
+    font-size: 11px;
 
   }
 
@@ -410,17 +416,13 @@ a:hover {
 
 @media screen and (max-width:580px){
 
+  .box-process .title-process h3{
+    font-size: 10.5px;
+  }
+
   .box-process .flex-process{
    flex-wrap: wrap;
    flex-direction: column;
-  }
-
-  .flex-process2 .right-process2 h4{
-    text-align: center;
-  }
-
-  .flex-process .right-process h4{
-    text-align: center;
   }
   
   .box-process .flex-process .left-process{
@@ -434,6 +436,11 @@ a:hover {
   .flex-process .right-process img{
     width: 100%;
   }
+
+  .box-process2 .title-process2 h3{
+    font-size: 10.5px;
+  }
+  
 
   .box-process2 .flex-process2{
     flex-wrap: wrap;
